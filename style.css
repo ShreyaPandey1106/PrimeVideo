@@ -1,0 +1,241 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bt{
+    padding: 6% 8% 6% 8%;
+    height: 40px;
+    width: max-content;
+  border: none;
+  border-radius: 7%;
+  font-size: medium;
+  color: rgba(255, 255, 255, 0.685);
+  background-color: #0f79af;
+}
+   /* Navbar */
+.header{
+    padding: 1% 5% 1% 5%;
+  width: 100%;
+  background-color: #0f171e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left{
+    width: 50%;
+  display: flex;
+  align-items: center;
+}
+.logo{
+    height: 35px;
+}
+.none{
+    display: none;
+}
+.right{
+    width: 30%;
+}
+.navlinks{
+    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navlinks a{
+  text-decoration: none;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.685);
+}
+
+.bi{
+    color: #fff;
+    font-size: 20px;
+}
+/* Main Page */
+.main{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/mlp.jpg);
+    padding: 10% 0% 10% 5%;
+
+}
+.text
+{   font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    color: white;    
+    width: 42%;
+}
+.text h1{
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 5%;
+}
+.para{
+  font-size: x-large;
+  font-weight: bolder;
+  margin-bottom: 3%;
+}
+.text button{
+    color: rgba(255, 255, 255, 0.838);
+    background-color: #0f79af;
+    border: none;
+    border-radius: 3%;
+    width: 55%;
+    font-weight: 500;
+    font-size: medium;
+    padding: 3% 0% 3% 0%;
+    margin-bottom: 2%;
+}
+.small{
+    margin-left: 8%;
+}
+/* second page */
+.hero{
+    background-image: url(./images/Prime-Video.jpg);
+}
+
+/* Channel Gallery */
+.channels{
+    padding: 5%;
+    display: flex;
+    align-items: center;
+}
+.textc{
+    font-family: 'Lato', sans-serif;
+    width: 50%;
+    font-size: x-large;
+    font-weight: lighter;
+    margin-right: 5%;
+}
+.textc h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+.gallery{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1%;
+}
+.box{
+    height: 120px;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+}
+.box :hover{
+    transform: scale(105%) ;
+    box-shadow: 5px 5px 5px 5px rgb(165, 164, 164);
+}
+/* Firestick page */
+.firestick{
+    height: 80vh;
+    background-image: url(./images/stick.jpg);
+    padding: 4% 0% 0% 55%;
+}
+.stick{
+  width: 90%;
+}
+  /* Kids Page */
+ .kids{
+    height: 80vh;
+    background-image: url(./images/kids.jpg);
+ } 
+ /* footer */
+.footer{
+    padding: 3% 0% 3% 0%;
+    background-color: #0f171e;
+    text-align: center;
+}
+.footer-list{
+    color: #949494;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer-list a{
+    color: #0f79af;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Media Querry */
+
+@media(max-width:768px){
+    /* Navbar */
+    .blank{
+        display: none;
+    }
+    .none{
+        display: block;
+    }
+    .right{
+        width: 60%;
+    }
+    .navlinks{
+        width: 100%;
+    }
+    .bi-caret-down-fill{
+        font-size: smaller;
+    }
+    /* main */
+    .main{
+        height: auto;
+        padding: 0%;
+        background: none;
+       background-color: black;
+    }
+    .image{
+        height: 40vh;
+        background-image: url(./images/mlp.jpg);
+        background-position-x: 80%;
+        background-size: 200%;
+    }
+    .text{
+        text-align: center;
+        width: 100%;
+        padding: 10% 5% 10% 5%;
+    }
+    .text button{
+        width: 90%;
+    }
+    .small{
+        margin: 0;
+    }
+    /* second page */
+    .imghero{
+        background-image: url(./images/Prime-Video.jpg);
+    }
+    /* Gallery */
+    .channels{
+        flex-direction: column;
+    }
+    .textc{
+        width: 100%;
+        font-size: large;
+        margin: 5%;
+    }
+    .gallery{
+        width: 100%;
+        margin: 5%;
+        grid-template-columns: repeat(2,1fr);
+    }
+    /* Firestick page */
+    .fstick{
+        height: 60vh;
+        background-image: url(./images/stick.jpg);
+        background-size: cover;  
+    }
+    /* Kids Page */
+    .imgkids{
+        height: 60vh;
+        background-image: url(./images/kids.jpg);
+        background-position-x: 100%;
+        background-size: cover; 
+    }
+}
